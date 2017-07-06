@@ -2,5 +2,7 @@
 Python keylogger for Linux
 
 Requirements:
-python-xlib
+
+1. python-xlib
+2. re
 
