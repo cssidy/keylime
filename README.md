@@ -1,5 +1,5 @@
 # keylime
-## Captures keys and squeezes out juicy emails, phone numbers and passwords (for Linux).
+### Captures keys and squeezes out juicy emails, phone numbers and passwords (for Linux).
 
 Requirements:
 
