@@ -5,5 +5,6 @@ Requirements:
 
 1. python-xlib
 2. regex
+3. [pyxhook](https://github.com/JeffHoogland/pyxhook) (included in this repository)
 
 
