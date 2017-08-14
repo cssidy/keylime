@@ -9,7 +9,9 @@ Requirements:
 
 TODO:
 
-1. 
-2. Create Twilio account
-3. Send texts when regex finds password, email, phone number, etc. matches
+1. Improve regex
+2. Exclude space bars, etc from keylogger
+3. Make space indentation after each word in log file
+4. Create Twilio account
+5. Send texts when regex finds password, email, phone number, etc. matches
 
