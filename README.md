@@ -7,4 +7,9 @@ Requirements:
 2. regex
 3. [pyxhook](https://github.com/JeffHoogland/pyxhook) (included in this repository)
 
+TODO:
+
+1. 
+2. Create Twilio account
+3. Send texts when regex finds password, email, phone number, etc. matches
 
